@@ -1,0 +1,10 @@
+<%= link_to "Login with Instagram", Instagram.authorize_url(redirect_uri: ENV['REDIRECT_URI'], scope: "basic") %>
+
+<br>
+<br>
+
+<%= @urls.each do |x| %>
+  <%= image_tag ( x ) %>
+  <br>
+  <br>
+<% end %>
